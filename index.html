@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crystal Skulls - Treasure Hunt </title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Skull-Icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Treasurehunt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div id"container">
+<!--p id="wordParagraph"></p>
+<button type="button" name="button" onclick="showWord()">SHOW IT</button>-->
+<div id="bgTran">
+    <h1>Crystal Skulls</h1>
+    <h3 id="h3Font">Treasure Hunt</h3>
+</div>
+    <!--Navigation-->
+     <nav>
+       <a href="https://en.wikipedia.org/wiki/Crystal_skull" target="_blank">Crystal Skulls_Wiki</a>
+       <a href="#bottom"> &#8681; Take me to..the bottom</a>
+     </nav>
+    <p>How to play</p>
+    <ul>
+      <li>Click the boxes to reveal the skulls</li>
+      <li>If you click on the tomb, you lose</li>
+      <li>If you click on the skull, you win</li>
+    </ul>
+    <img src="https://image.freepik.com/free-vector/green-pirate-skull-background_1152-23.jpg" alt="Skull Pic" height="300px" >
+    <div id="gameboard">
+    <table border="1"><!--1 equal True--> <!--gameboard-->
+      <tr class="table-row"><!--Row-->
+        <td id="0" onclick="treasure(0)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="1" onclick="treasure(1)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="2" onclick="treasure(2)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+      </tr>
+      <tr class="table-row">
+        <td id="3" onclick="treasure(3)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="4" onclick="treasure(4)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="5" onclick="treasure(5)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+      </tr>
+      <tr class="table-row">
+        <td id="6" onclick="treasure(6)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="7" onclick="treasure(7)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+        <td id="8" onclick="treasure(8)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
+      </tr>
+    </table>
+  </div><!-- gameboard end-->
+    <button type="button" onClick="location.reload();">Restart</button>
+    <p id="bottom">This is the bottom.. hahaha!</p>
+    <footer>&copy; 2021 <a href="file:///C:/Users/gluit/OneDrive/Desktop/JumpStart_G/index.html">Crystal Skulls</a> - Mission Beach Team - Gluay, Veronica and Frank</footer>
+    <script type="text/javascript" src="treasurehunt.js">
+    </script>
+  </div><!-- container-->
+  </body>
+</html>
+2:19
+CSS :raised_hands:
+2:20
+* {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  /*key: value;*/
+  /*background-color: rgb(41, 65, 171);
+  color: #fff;
+  */
+  background-image: url(https://image.freepik.com/free-vector/zombie-biker-head-isolated-black_43623-910.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+}
+ #container {
+ }
+h1 {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 600;
+  color: #1ED760;
+  letter-spacing: 15px;
+  /*text-shadow: 2px 2px #000;*/
+  animation: bounceIn 4s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  text-align: center:x;
+  background-color: #081D44;
+  margin: 30px 0 0 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+#bgTran {
+}
+#h3Font {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+a {
+  text-decoration: none;
+  color:#fff;
+  display: inline;
+  width: 100px;
+  height:auto;
+  border: 1px solid #fff;
+  padding: 1px 20px 3px 20px;
+}
+ /*background-color: rgb(255, 205, 210);     #D83519   */
+p {
+  font-size: 30px;
+  color: rgb(255, 205, 210);
+  /*text-shadow: 2px 2px #000;*/
+}
+li {
+  font-size: 20px;
+  color: rgb(255, 205, 210);
+}
+#gameboard {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+ #gameboard:hover {
+   /*cursor: url(https://image.freepik.com/free-vector/skull-top-hat-vector-illustration-head-scary-character-gentleman-cylinder-hat_74855-10948.jpg) 16 0 auto;
+   */
+ }
+ tr {
+   background-color: darkgray;
+ }
+footer {
+  background-color: rgb(255, 205, 210);
+  padding: 55px 0;
+  color:#D83519;
+}
+.table-row {
+  border : 2px solid white;
+}
+/*******************************/
+@keyframes bounceIn {
+  0% {
+    transform: scaleX(0.5);
+  }
+  60% {
+    transform: scaleX(1.6);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+(75 kB)
+https://image.freepik.com/free-vector/zombie-biker-head-isolated-black_43623-910.jpg
+
+(48 kB)
+https://image.freepik.com/free-vector/skull-top-hat-vector-illustration-head-scary-character-gentleman-cylinder-hat_74855-10948.jpg
